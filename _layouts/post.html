@@ -2,25 +2,20 @@
 layout: default
 ---
 
-<div class="body">
-  
-  <div id="logo"><i class="fa fa-home"></i></div>
-	
+<div id="logo"><i class="fa fa-home"></i></div>
 	<section id="page" class="post" role="main">
-
-    <header class="wrap post-header">
-      <h1 class="page-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%B %e, %Y" }} <b>//</b> {{ page.categories }}</p>
-    </header>
-
-    <hr>
-    
-    <article class="wrap post-content">
-      {{ content }}
-    </article>
-
-    <hr>
-
-  </section>
-  
+		
+		<header class="wrap post-header">
+			<h1 class="page-title">{{ page.title }}</h1>
+			<p class="post-meta">{{ page.date | date: "%B %e, %Y" }} <b>//</b> {{ page.categories }}</p>
+		</header>
+		
+		<hr>
+		
+		<article class="wrap post-content">
+			{{ content }}
+		</article>
+		
+		<hr>
+	</section>
 </div>
