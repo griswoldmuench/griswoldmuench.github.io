@@ -2,17 +2,46 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<div class="body">
+  <div id="page" role="main">
+    <div id="banner">
+      <div id="silhouettes">
+        <span id="beach_guy"></span>
+        <span id="safari_guy"></span>
+        <img id="erik" src="css/erik.png"/>
       </div>
+      <div id="belt"></div>
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    <header class="wrap">
+        
+      <h1 class="page-title ft">GRIZ MUENCH</h1>
+      <p class="intro">Designer from New York City who loves meeting new people, building useful tools, dropping dope beats and pushing life's boundaries. My mission is to help others recognize, develop and use their God-given abilities to ease suffering and grow in goodness, love and compassion.</p>
+
+    </header>
+
+    <hr>
+        
+    <section>
+      <h2 class="list-title"><i class="fa fa-pencil"></i>Featured Posts</h2>
+      <ul class="post-list">
+      {% for post in site.posts %}
+        <li class="post-block">
+          <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="post-meta">{{ post.date }}</p>
+        </li>
+      {% endfor %}
+      </ul>
+    </section>
+    
+  </div>
+
+  <footer id="footer" class="wrap" style="padding-top:0;margin-top:-.9em;">
+    <p>©2050&#160;<a href="http://griswoldmuench.com/">Griswold Muench</a> &nbsp;| &nbsp;<a href="mailto:asmuench@gmail.com">Contact Me</a></p>
+  </footer>
+
 </div>
+
+<!-- {% include analytics.html %} -->
+    
+<script src="/js/jquery-2.0.0.min.js"></script>
