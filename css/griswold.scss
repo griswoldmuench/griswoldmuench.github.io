@@ -2,96 +2,83 @@
 ### Front matter to ensure that Jekyll properly reads the file.
 ---
 
-#loading_mask {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 4;
-	left: 0;
-	top: 0;
-	background-color: #f9f4ec;
+/***********************************************************/
+/*********************** Dosis Font ************************/
+/***********************************************************/
+
+@font-face {
+	font-family: 'Dosis';
+	src: url('dosis/Dosis-Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Dosis';
+	src: url('dosis/Dosis-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Dosis';
+	src: url('dosis/Dosis-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Dosis';
+	src: url('dosis/Dosis-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Dosis';
+	src: url('dosis/Dosis-SemiBold.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
 }
 
-#banner {
-	text-align: center;
-	position: relative;
-	overflow: hidden;
-	border-radius: .25em;
-	margin-top: 2em;
+/***********************************************************/
+/*********************** Kadwa Font ************************/
+/***********************************************************/
+
+@font-face {
+	font-family: 'Kadwa';
+	src: url('kadwa/Kadwa-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kadwa';
+	src: url('kadwa/Kadwa-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
 }
 
-#belt {
-	display: inline-block;
-	border-radius: .25em;
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 2px;
-	letter-spacing: .1em;
-	font-family: 'dosis';
-	text-transform: uppercase;
-	z-index: 3;
-	font-weight:400;
-	background-color: #7a77a3;
-	color: #fff;
-	-webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
+/*******************************************************************/
+/************************* Miscellaneous ***************************/
+/*******************************************************************/
+
+.display_none { 
+    display: none; 
 }
 
-#belt:after {
-	content: "BUSINESS MINDED \00a0\00a0 // \00a0\00a0 CREATIVE AT HEART";
-	display: inline-block;
-	padding: .75em;
+.invisible { visibility: hidden; }
+
+::-moz-selection {
+	background: #7a77a3;
+	color: #f9f4ed;
+	text-shadow: none;
 }
 
-#silhouettes {
-	position: relative;
-	display: inline-block;
-	width: 60%;
-	max-width: 350px;
-	margin: 0 auto .5em;
-	background: url("erik_black.png") no-repeat center bottom;
-	background-size: 100%;
+::selection {
+	background: #7a77a3;
+	color: #f9f4ed;
+	text-shadow: none;
 }
 
-#silhouettes img {
-	max-width: 350px;
-	width: 100%;
-	position: relative;
-	z-index: 2;
-	opacity: 0;
-}
-
-#beach_guy, #safari_guy {
-	width: 100%;
-	height: 100%;
-	max-width: 350px;
-	display: block;
-	background-size: 100%;
-	position: absolute;
-	top: 0;
-	z-index: 1;
-}
-
-#beach_guy {
-	background-image: url("erik_beach.png");
-	right: 52%;
-}
-
-#safari_guy {
-	background-image: url("serengeti2.png");
-	left: 52%;
-}
-
-#beach_guy, #safari_guy, #silhouettes img, #masthead, #belt {
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-ms-animation-fill-mode: both;
-	-o-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
+/******************************************************************/
+/************************** Animations ****************************/
+/******************************************************************/
 
 @-webkit-keyframes fadeIn {
 	0% { opacity: 0; }
@@ -242,6 +229,91 @@
 	100% { bottom:0; }
 }
 
+/***************************************************************/
+/************************* BANNER CSS **************************/
+/***************************************************************/
+
+#banner {
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: .25em;
+	margin-top: 2em;
+}
+
+#belt {
+	display: inline-block;
+	border-radius: .25em;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 2px;
+	letter-spacing: .1em;
+	font-family: 'dosis';
+	text-transform: uppercase;
+	z-index: 3;
+	font-weight:400;
+	background-color: #7a77a3;
+	color: #fff;
+	-webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
+#belt:after {
+	content: "BUSINESS MINDED \00a0\00a0 // \00a0\00a0 CREATIVE AT HEART";
+	display: inline-block;
+	padding: .75em;
+}
+
+#silhouettes {
+	position: relative;
+	display: inline-block;
+	width: 60%;
+	max-width: 350px;
+	margin: 0 auto .5em;
+	background: url("erik_black.png") no-repeat center bottom;
+	background-size: 100%;
+}
+
+#silhouettes img {
+	max-width: 350px;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	opacity: 0;
+}
+
+#beach_guy, #safari_guy {
+	width: 100%;
+	height: 100%;
+	max-width: 350px;
+	display: block;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+#beach_guy {
+	background-image: url("erik_beach.png");
+	right: 52%;
+}
+
+#safari_guy {
+	background-image: url("serengeti2.png");
+	left: 52%;
+}
+
+#beach_guy, #safari_guy, #silhouettes img, #masthead, #belt {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
 #silhouettes img {
 	-webkit-animation-delay: .9s;
 	-moz-animation-delay: .9s;
@@ -327,7 +399,7 @@ h1 {
 	margin: .67em 0;
 }
 
-b, strong { font-weight: bold; }
+b, strong { font-weight: 700; }
 
 hr {
 	-moz-box-sizing: content-box;
@@ -335,7 +407,7 @@ hr {
 	height: .75em;
 }
 
-img { border:0; }
+img { border: 0; }
 
 .no-js body, .wf-active body, .wf-inactive body { visibility: visible; }
 
@@ -346,15 +418,14 @@ html {
 }
 
 body {
-	margin: 0 auto;
+	position: relative;
 	padding: 0;
+	margin: 0 auto;
 	font-size: 16px;
 	font-family: 'Kadwa', 'Georgia', serif;
-	color: #444;
 	line-height: 1.6;
 	max-width: 732px;
 	min-width: 240px;
-	position: relative;
 	visibility: hidden;
 }
 
@@ -376,20 +447,15 @@ body {
 
 .wrap { padding: 2em; }
 
-#masthead {
-	padding: 2em 2em 0;
-	overflow: hidden;
-}
-
-.btn, .page-title, .post-title, .list-title, .main-title, .sub-title, .nav-menu li a, .post-header .post-meta {
+.page-title, .post-title, .list-title, .main-title, .sub-title, .post-header .post-meta {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 1.25;
 	margin: 0 0 1rem;
 }
@@ -412,13 +478,13 @@ h5 { font-size: 1.25em; }
 
 h6 { font-size: 1em; }
 
-.main-title { margin:0; }
+.main-title { margin: 0; }
 
 .page-title {
 	margin-bottom: 0;
 	font-size: 3.75em;
 	word-wrap: break-word;
-	line-height: 1;
+	line-height: 1.05;
 }
 
 p { font-size: 1em; }
@@ -477,7 +543,7 @@ a:hover, a:focus { color: #7a77a3; }
 }
 
 .post-content h3 {
-	font-weight: normal;
+	font-weight: 400;
 	margin-top: 1.5em;
 }
 
@@ -508,7 +574,7 @@ a:hover, a:focus { color: #7a77a3; }
 	font-size: 1.25em;
 	padding: 0 2em;
 	margin-top: 1.5em;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .list-title i { margin-right: .5em; }
@@ -563,21 +629,17 @@ a:hover, a:focus { color: #7a77a3; }
 
 #logo {
 	position: relative;
-	color: #444;
-	font-family: 'Dosis';
-	font-weight: bolder;
 	font-size: 1.5em;
-	border: .3em solid #444;
 	border-radius: .25em;
 	margin-top: 2em;
 	margin-left: 1.35em;
-	/*overflow: hidden;*/
-	padding-top: .25em;
-	padding-bottom: .25em;
-	width: 1em;
-	display:inline-block;
-	text-align:center;
-	width: 2em;
+	margin-bottom: 0;
+	display: inline-block;
+	text-align: center;
+	background-color: #7a77a3;
+	color: #fff;
+	width: 2.6em;
+	padding: .55em 0;
 }
 
 #logo:hover {
@@ -587,34 +649,16 @@ a:hover, a:focus { color: #7a77a3; }
 	cursor: pointer;
 }
 
-#pencil {
+#griz-text {
 	display: inline-block;
 	font-size: 1.5em;
-	color: #444;
-	margin-left: 1em;
+	margin-left: .75em;
 	margin-top: 2em;
 	font-family: 'Dosis';
-	font-weight: bold;
+	font-weight: 700;
+	letter-spacing: .05em;
 }
 
-/*******************************************************************/
-/************************* Miscellaneous ***************************/
-/*******************************************************************/
-
-.display_none { 
-    display: none; 
-}
-
-.invisible { visibility: hidden; }
-
-::-moz-selection {
-	background: #7a77a3;
-	color: #f9f4ed;
-	text-shadow: none;
-}
-
-::selection {
-	background: #7a77a3;
-	color: #f9f4ed;
-	text-shadow: none;
+#griz-text:hover {
+	color: #7a77a3;
 }
