@@ -639,7 +639,9 @@ a:hover, a:focus { color: #7a77a3; }
 	background-color: #7a77a3;
 	color: #fff;
 	width: 2.6em;
-	padding: .55em 0;
+	/*padding: .55em 0;*/
+	padding-top: .55em;
+	padding-bottom: .55em;
 }
 
 #logo:hover {
