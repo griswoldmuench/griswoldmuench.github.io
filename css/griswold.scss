@@ -627,7 +627,7 @@ a:hover, a:focus { color: #7a77a3; }
 	right: 0;
 }
 
-#logo {
+.logo {
 	position: relative;
 	font-size: 1.5em;
 	border-radius: .25em;
@@ -639,19 +639,16 @@ a:hover, a:focus { color: #7a77a3; }
 	background-color: #7a77a3;
 	color: #fff;
 	width: 2.6em;
-	/*padding: .55em 0;*/
-	padding-top: .55em;
-	padding-bottom: .55em;
+	padding: .55em 0;
 }
 
-#logo:hover {
+.logo:hover {
 	color: #7a77a3;
 	background-color: #fff;
 	border-color: #fff;
-	cursor: pointer;
 }
 
-#griz-text {
+.griz-text {
 	display: inline-block;
 	font-size: 1.5em;
 	margin-left: .75em;
@@ -661,6 +658,6 @@ a:hover, a:focus { color: #7a77a3; }
 	letter-spacing: .05em;
 }
 
-#griz-text:hover {
+.griz-text:hover {
 	color: #7a77a3;
 }
