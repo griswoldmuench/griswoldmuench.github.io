@@ -27,7 +27,7 @@ layout: default
     {% for post in site.posts %}
       <li class="post-block">
         <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: "%B %e, %Y" }}</p>
+        <p class="post-meta emoji">{{ post.date | date: "%B %e, %Y" }}</p>
       </li>
     {% endfor %}
     </ul>
