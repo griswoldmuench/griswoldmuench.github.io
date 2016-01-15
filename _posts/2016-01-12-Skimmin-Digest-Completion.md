@@ -2,7 +2,7 @@
 layout: post
 title:  Skimmin Digest Completion
 date: 2016-01-12 12:04:49
-categories: "77"
+categories: ":rainbow:"
 ---
 
 <img style="box-shadow: 0 0 15px rgba(0, 0, 0, .25);" src="http://i.imgur.com/zVgdXPF.png">
