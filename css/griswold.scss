@@ -249,7 +249,7 @@
 	left: 0;
 	bottom: 2px;
 	letter-spacing: .1em;
-	font-family: 'dosis';
+	font-family: 'is';
 	text-transform: uppercase;
 	z-index: 3;
 	font-weight:400;
@@ -426,6 +426,7 @@ body {
 	font-family: 'Tahoma', 'Geneva', serif;
 	font-family: 'Georgia', serif;
 	font-family: 'Helvetica';
+	font-family: 'Kadwa', 'Georgia', serif;
 	line-height: 1.6;
 	max-width: 732px;
 	min-width: 240px;
@@ -452,9 +453,9 @@ body {
 
 .page-title, .post-title, .list-title, .main-title, .sub-title, .post-header .post-meta {
 	font-family: 'Dosis', sans-serif;
-	font-family: 'Georgia';
 	/*font-family: 'Georgia';*/
-	/*text-transform: uppercase;*/
+	/*font-family: 'Georgia';*/
+	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-weight: 700;
 }
