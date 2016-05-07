@@ -536,7 +536,7 @@ a {
 	font-family: inherit;
 }
 
-a:hover, a:focus { color: #7a77a3; }
+a:hover, a:focus { /*color: #7a77a3;*/ opacity: .5; }
 
 .post-content { overflow: hidden; }
 
