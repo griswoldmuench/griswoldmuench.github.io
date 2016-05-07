@@ -26,19 +26,18 @@ layout: default
     <ul class="post-list">
     {% for post in site.posts %}
       
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <!-- <a href="{{ site.baseurl }}{{ post.url }}">
         <li class="post-block">
           <h3 class="post-title">{{ post.title }}</h3>
           <p class="post-meta emoji">{{ post.date | date: "%B %e, %Y" }} &nbsp;{{ post.categories }}</p>
         </li>
-      </a>
-        
+      </a> -->
       
-      
-      <!-- <li class="post-block">
+      <li class="post-block">
         <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <p class="post-meta emoji">{{ post.date | date: "%B %e, %Y" }} &nbsp;{{ post.categories }}</p>
-      </li> -->
+      </li>
+    
     {% endfor %}
     </ul>
   </section>
