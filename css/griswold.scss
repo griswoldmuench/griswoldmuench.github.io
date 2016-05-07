@@ -536,7 +536,7 @@ a {
 	font-family: inherit;
 }
 
-a:hover, a:focus { /*color: #7a77a3;*/ opacity: .5; }
+a:hover, a:focus { color: #7a77a3; }
 
 .post-content { overflow: hidden; }
 
@@ -619,9 +619,9 @@ a:hover, a:focus { /*color: #7a77a3;*/ opacity: .5; }
 
 .post-block .post-title a { display: block; }
 
-.post-block .post-title a:visited { color: #aaa; }
+.post-block .post-title a:visited { /*color: #aaa;*/ opacity: .5; }
 
-.post-block .post-title a:visited:hover { color: #7a77a3; }
+.post-block .post-title a:visited:hover { /*color: #7a77a3;*/ opacity: 1; }
 
 .post-block .post-title a:before {
 	content: "";
