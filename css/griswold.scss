@@ -621,7 +621,7 @@ a:hover, a:focus { color: #7a77a3; }
 
 .post-block .post-title a:visited { /*color: #aaa;*/ opacity: .5; }
 
-.post-block .post-title a:visited:hover { /*color: #7a77a3;*/ opacity: 1; }
+.post-block .post-title a:visited:hover { color: #7a77a3; opacity: 1; }
 
 .post-block .post-title a:before {
 	content: "";
